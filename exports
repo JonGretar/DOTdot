@@ -1,0 +1,9 @@
+# Software Configuration
+export JAVA_HOME=/Library/Java/Home/
+export JRUBY_HOME=/opt/jruby
+export CLICOLOR=yes
+export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
+export EDITOR=nano
+export SVN_EDITOR=nano
+export OBJJ_HOME=/usr/local/share/objj
+export STEAM_BUILD=/Users/jongretar/Development/JavaScript/OSS/objj_build

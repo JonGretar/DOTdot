@@ -1,0 +1,20 @@
+# changing directory to code project
+function c { cd ~/Development/$1; }
+
+# Aliases
+
+alias m='more'
+alias df='df -h'
+alias ll="ls -la"
+alias la="ls -a"
+alias ..='cd ..'
+alias ...='cd .. ; cd ..'
+
+alias mate_rails='mate README Rakefile app components config db doc lib log public test vendor/plugin '
+alias ducks='du -cksh * | sort -rn|head -11' # Lists folders and files sizes in the current folder
+alias svnaddall='svn status | grep "^\?" | awk "{print \$2}" | xargs svn add'
+alias svncleardirectory='find . -name .svn -print0 | xargs -0 rm -rf'
+
+alias emacs="open -a /Applications/Emacs.app/Contents/MacOS/Emacs "
+alias emacs-clear-temp='find . -name \#*\# -print0 | xargs -0 rm -rf'
+
