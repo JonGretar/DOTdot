@@ -18,3 +18,7 @@ alias svncleardirectory='find . -name .svn -print0 | xargs -0 rm -rf'
 alias emacs="open -a /Applications/Emacs.app/Contents/MacOS/Emacs "
 alias emacs-clear-temp='find . -name \#*\# -print0 | xargs -0 rm -rf'
 
+# rails
+alias ss='script/server'
+alias sc='script/console'
+alias sr='script/runner'
