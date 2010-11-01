@@ -1,0 +1,27 @@
+[core]
+        excludesfile = ~/.gitignore
+[apply]
+        whitespace = nowarn
+[alias]
+        stat = status
+#       ci = commit
+        ca = commit -a
+        br = branch
+        ba = branch -a
+        co = checkout
+        df = diff
+        lg = log -p
+        ci = !thor git:push
+        up = !thor git:update
+        upa = !thor git:update:all
+        open = !thor git:open $1
+        close = !thor git:close $1
+        fold = !thor git:fold
+        sq = !thor git:squash
+[color]
+        branch = auto
+        diff = auto
+        status = auto
+[push]
+        default = matching
+
