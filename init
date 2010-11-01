@@ -5,8 +5,3 @@ source ~/.bash.d/aliases
 source ~/.bash.d/completions
 source ~/.bash.d/shell
 source ~/.bash.d/exports
-
-if [ -f ~/.bashrc ]; then
-  . ~/.bashrc
-fi
-
