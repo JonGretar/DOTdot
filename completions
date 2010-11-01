@@ -2,6 +2,7 @@ source ~/.bash.d/completion_scripts/git_completion
 source ~/.bash.d/completion_scripts/svn_completion
 source ~/.bash.d/completion_scripts/rebar_completion
 source ~/.bash.d/completion_scripts/gem_completion
+source ~/.bash.d/completion_scripts/ssh_completion
 complete -C ~/.bash.d/completion_scripts/rake_completion -o default rake
 complete -C ~/.bash.d/completion_scripts/project_completion -o default c
 complete -o default -o nospace -F _git gh
