@@ -1,5 +1,6 @@
 # changing directory to code project
 function c { cd ~/Development/$1; }
+function pz { cd ~/Development/PlatformZ/$1; }
 
 # Aliases
 

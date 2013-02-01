@@ -5,5 +5,6 @@ source ~/.bash.d/completion_scripts/gem_completion
 source ~/.bash.d/completion_scripts/ssh_completion
 complete -C ~/.bash.d/completion_scripts/rake_completion -o default rake
 complete -C ~/.bash.d/completion_scripts/project_completion -o default c
+complete -C ~/.bash.d/completion_scripts/pz_project_completion -o default pz
 complete -o default -o nospace -F _git gh
 complete -C $ERL_LIBS/nitrogen-master/support/nitrogen_bashcompletion.escript -o default nitrogen
