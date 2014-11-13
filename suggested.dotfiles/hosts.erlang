@@ -1,0 +1,11 @@
+%
+% List of hosts to connect to, used by net_adm:world().
+% http://www.erlang.org/doc/man/net_adm.html
+% https://www.ejabberd.im/interconnect-erl-nodes
+% One hostname per line, in single quotes, e.g.:
+%
+%   'hostname1'.
+%   'hostname2'.
+%
+% I Suggest adding at least the short name of the localhost.
+%

@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+## For this we should have installed: brew install bash_completion2
+if [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
+  . $(brew --prefix)/share/bash-completion/bash_completion
+  if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+  fi
+  if [ -d $(brew --prefix)/etc/bash_completion.d ]; then
+    for file in $(/usr/bin/env ls -1 $(brew --prefix)/etc/bash_completion.d); do
+      source $(brew --prefix)/etc/bash_completion.d/$file
+    done
+  fi
+fi
+
+if [ -d ~/.dot/bash.d/completions.d ]; then
+  for file in $(/usr/bin/env ls -1 ~/.dot/bash.d/completions.d); do
+    source ~/.dot/bash.d/completions.d/$file
+  done
+fi
+
+complete -C ~/.dot/bash.d/support/project_completion -o default c
+complete -C ~/.dot/bash.d/support/pz_project_completion -o default pz
+complete -o default -o nospace -F _git gh

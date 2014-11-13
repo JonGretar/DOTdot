@@ -1,7 +1,0 @@
-# Add line to ~/bash_profile
-#    source ~/.bash.d/init
-
-source ~/.bash.d/aliases
-source ~/.bash.d/completions
-source ~/.bash.d/shell
-source ~/.bash.d/exports

@@ -1,0 +1,25 @@
+# Requires Git version 1.7.10.2+
+
+# TODO: Check out https://gist.github.com/pksunkara/988716
+
+[user]
+	# SET IN ~/.gitconfig.user instead
+[github]
+	# SET IN ~/.gitconfig.user instead
+[credential]
+	helper = osxkeychain
+[core]
+	excludesfile = ~/.gitignore
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+[push]
+	default = matching
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+
+[include]
+	path = ~/.gitconfig.user

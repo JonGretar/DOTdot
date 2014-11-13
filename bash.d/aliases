@@ -1,6 +1,6 @@
+#!/usr/bin/env bash
 # changing directory to code project
 function c { cd ~/Development/$1; }
-function pz { cd ~/Development/PlatformZ/$1; }
 
 # Aliases
 
@@ -19,9 +19,26 @@ alias svncleardirectory='find . -name .svn -print0 | xargs -0 rm -rf'
 alias emacs="open -a /Applications/Emacs.app/Contents/MacOS/Emacs "
 alias emacs-clear-temp='find . -name \#*\# -print0 | xargs -0 rm -rf'
 
+#alias elastic_run="elasticsearch --config=/usr/local/opt/elasticsearch/config/elasticsearch.yml"
+
+# Disable sleeps
+alias nosleep='pmset noidle'
+
 # rails
 alias ss='script/server'
 alias sc='script/console'
 alias sr='script/runner'
 alias migrate="rake db:migrate db:test:prepare"
 alias remigrate="rake db:migrate && rake db:migrate:redo && rake db:schema:dump db:test:prepare"
+
+# NodeJS
+alias node='node --harmony'
+
+# Erlang
+alias erlobserver='erl -sname observer -run observer -noshell'
+
+# Start Brews
+#alias postgres_start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+alias start_postgres='postgres -D /usr/local/var/postgres'
+alias start_elasticsearch="elasticsearch --config=/usr/local/opt/elasticsearch/config/elasticsearch.yml"
+alias start_rethinkdb="rethinkdb -d'/Users/jongretar/Library/Application Support/RethinkDB/database'"

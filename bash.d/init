@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Add line to ~/bash_profile
+#    source ~/.dot/bash.d/init
+
+source ~/.dot/bash.d/exports
+source ~/.dot/bash.d/functions
+source ~/.dot/bash.d/aliases
+source ~/.dot/bash.d/completions
+source ~/.dot/bash.d/shell
+
+
+if [ -d ~/.dot/bash.local.d ]; then
+	for file in $(/usr/bin/env ls -1 ~/.dot/bash.local.d); do
+		source ~/.dot/bash.local.d/$file
+	done
+fi

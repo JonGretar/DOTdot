@@ -1,3 +1,4 @@
+#!/bin/bash
 # Programmable completion for the Subversion svn command under bash. Source
 # this file (or on some systems add it to ~/.bash_completion and start a new
 # shell) and bash's completion mechanism will know all about svn's options!

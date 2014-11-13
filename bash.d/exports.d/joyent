@@ -1,0 +1,7 @@
+# Joyent Setup
+export SDC_ACCOUNT=$(whoami)
+export SDC_URL=https://eu-ams-1.api.joyentcloud.com
+export SDC_KEY_ID=SET_IN/.dot/local/exports
+export MANTA_URL=https://us-east.manta.joyent.com
+export MANTA_USER=$SDC_ACCOUNT
+export MANTA_KEY_ID=SET_IN/.dot/local/exports

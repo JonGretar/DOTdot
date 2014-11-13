@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # Colors (from jacqui)
         RED="\[\033[0;31m\]"
      YELLOW="\[\033[0;33m\]"
@@ -37,7 +38,7 @@ function parse_git_branch {
     echo " (${branch})${remote}${state}"
   fi
 }
- 
+
 function prompt_func() {
     previous_return_value=$?;
     # prompt="${TITLEBAR}$BLUE[$RED\w$GREEN$(__git_ps1)$YELLOW$(git_dirty_flag)$BLUE]$COLOR_NONE "

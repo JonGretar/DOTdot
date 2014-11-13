@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Software Configuration
+if [ -d ~/.dot/bash.d/exports.d ]; then
+	for file in $(/usr/bin/env ls -1 ~/.dot/bash.d/exports.d); do
+		source ~/.dot/bash.d/exports.d/$file
+	done
+fi
+
+export CLICOLOR=yes
+export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
+export EDITOR=nano
+export SVN_EDITOR=nano
